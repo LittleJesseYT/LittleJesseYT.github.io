@@ -2,10 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My GitHub Page</title>
+    <title>Work In Progress</title>
 </head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>This is my GitHub Pages site.</p>
+<body style="background-color:white;">
+    <h1 style="color:black;" id="heading1">Work in Progress!</h1>
+    <p id="textical">Unfinished.</p>
+    
+    <button  value="darkmode" id="button" onclick="darkmodeon()">Darkmode</button>
+    
+    <script>
+        function darkmodeon() {
+        	document.body.style="background-color:black;";
+        	document.getElementById('heading1').style.color = 'white'
+        	document.getElementById('textical').style.color = 'white'
+        	document.getElementById('button').onclick = lightmodeon
+        	document.getElementById('button').innerText = 'lightmode'
+        }	
+    </script>
+    
+    <script>
+        function lightmodeon(){
+          document.body.style="background-color:white;";
+        	document.getElementById('heading1').style.color = 'black'
+        	document.getElementById('textical').style.color = 'black'
+        	document.getElementById('button').onclick = darkmodeon
+      	}
+    </script>
+   
+   
+<style>
+#button {
+  color: red;
+  background: transparent;
+  background-size: contain;
+  border: 2px solid black;
+  border-radius:10px ;
+}
+</style>
 </body>
 </html>
