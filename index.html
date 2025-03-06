@@ -1,43 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Work In Progress</title>
+  <meta charset="UTF-8">
+  <title>LittleTiers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color:white;">
-    <h1 style="color:black;" id="heading1">Work in Progress!</h1>
-    <p id="textical">Unfinished.</p>
+<body>
+    <h1 style="color:black;" id="heading1">LittleTiers</h1>
+    <p style="color:white" id="textical">Unfinished.</p>
     
-    <button  value="darkmode" id="button" onclick="darkmodeon()">Darkmode</button>
-    
-    <script>
-        function darkmodeon() {
-        	document.body.style="background-color:black;";
-        	document.getElementById('heading1').style.color = 'white'
-        	document.getElementById('textical').style.color = 'white'
-        	document.getElementById('button').onclick = lightmodeon
-        	document.getElementById('button').innerText = 'lightmode'
-        }	
-    </script>
-    
-    <script>
-        function lightmodeon(){
-          document.body.style="background-color:white;";
-        	document.getElementById('heading1').style.color = 'black'
-        	document.getElementById('textical').style.color = 'black'
-        	document.getElementById('button').onclick = darkmodeon
-      	}
-    </script>
-   
-   
 <style>
-#button {
-  color: red;
-  background: transparent;
-  background-size: contain;
-  border: 2px solid black;
-  border-radius:10px ;
+body {
+  text-align: center;
+  background-color: #010a0e;
 }
+
+#heading1 {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 22%;
+  margin: auto;
+  box-shadow: 2px 2px 2px #26262b;
+  background-size: contain; 
+  background-image: linear-gradient(red, gold);
+  animation-duration: 5s;
+  animation-name: title;
+}
+
 </style>
 </body>
 </html>
